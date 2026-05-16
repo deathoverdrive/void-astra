@@ -361,7 +361,14 @@ def gerar_mensagem_procedural(tipo_leitura, posicao, carta, signo_info=None):
     return "\n\n".join([p for p in partes if p])
 
 
-def criar_embed_leitura(titulo, descricao, cartas_sorteadas, posicoes, tipo_leitura="geral", signo_info=None):
+def criar_embed_leitura(
+    titulo,
+    descricao,
+    cartas_sorteadas,
+    posicoes,
+    tipo_leitura="geral",
+    signo_info=None
+):
     embed = discord.Embed(
         title=titulo,
         description=descricao,
@@ -412,29 +419,29 @@ def criar_embed_leitura(titulo, descricao, cartas_sorteadas, posicoes, tipo_leit
     texto_combinacoes = ""
 
     if signo_info:
-         sintese = (
-        f"**Signo:** {signo_info['simbolo']} {signo_info['nome']}\n"
-        f"**Elemento:** {signo_info['elemento']}\n"
-        f"**Modalidade:** {signo_info['modalidade']}\n"
-        f"**Regente:** {signo_info['planeta']}\n"
-        f"**Energia:** {signo_info['energia']}\n"
-        f"**Sombra:** {signo_info['sombra']}\n"
-        f"**Conselho:** {signo_info['conselho']}\n\n"
-        f"A energia dominante desta leitura é **{energia_dominante}**."
-    )
+        sintese = (
+            f"**Signo:** {signo_info['simbolo']} {signo_info['nome']}\n"
+            f"**Elemento:** {signo_info['elemento']}\n"
+            f"**Modalidade:** {signo_info['modalidade']}\n"
+            f"**Regente:** {signo_info['planeta']}\n"
+            f"**Energia:** {signo_info['energia']}\n"
+            f"**Sombra:** {signo_info['sombra']}\n"
+            f"**Conselho:** {signo_info['conselho']}\n\n"
+            f"A energia dominante desta leitura é **{energia_dominante}**."
+        )
     else:
         sintese = (
-        f"A energia dominante desta leitura é **{energia_dominante}**.\n\n"
-        "O Void Astra sugere interpretar as cartas como partes de uma mesma travessia."
-    )
+            f"A energia dominante desta leitura é **{energia_dominante}**.\n\n"
+            "O Void Astra sugere interpretar as cartas como partes de uma mesma travessia."
+        )
 
     embed.add_field(
-    name="🌌 Síntese do Oráculo",
-    value=sintese,
-    inline=False
-)
+        name="🌌 Síntese do Oráculo",
+        value=sintese,
+        inline=False
+    )
 
-if combinacoes:
+    if combinacoes:
         for combinacao in combinacoes:
             texto_combinacoes += (
                 f"**{combinacao['nome']}**\n"
@@ -447,11 +454,11 @@ if combinacoes:
             inline=False
         )
 
-embed.set_footer(
+    embed.set_footer(
         text="Void Astra • O vazio nunca permanece em silêncio."
     )
 
-return embed
+    return embed
 
 
 def resposta_simples(titulo, texto):
