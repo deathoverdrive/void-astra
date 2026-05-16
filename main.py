@@ -231,7 +231,7 @@ def registrar_leitura(usuario, cartas_sorteadas, signo=None):
         "data": datetime.now().strftime("%d/%m/%Y %H:%M"),
         "signo": signo,
         "cartas": cartas_sorteadas
-
+        }
     for carta in cartas_sorteadas:
         perfil["cartas"][carta["nome"]] = perfil["cartas"].get(carta["nome"], 0) + 1
         perfil["energias"][carta["energia"]] = perfil["energias"].get(carta["energia"], 0) + 1
