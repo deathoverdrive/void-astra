@@ -1,0 +1,74 @@
+{
+  "The Black Sun": {
+    "tipo": "Carta Rara",
+    "raridade": "Eclipse",
+    "energia": "Ruína Sagrada",
+    "palavra": "Extinção",
+    "frase": "Quando o sol escurece, a alma aprende a enxergar sem luz.",
+    "normal": "Uma fase antiga está perdendo força. Algo precisa morrer para que uma verdade maior surja.",
+    "invertida": "Resistência ao fim, apego a uma identidade antiga ou medo de perder controle."
+  },
+  "The White Abyss": {
+    "tipo": "Carta Rara",
+    "raridade": "Primordial",
+    "energia": "Vazio Original",
+    "palavra": "Origem",
+    "frase": "Antes da primeira estrela, havia um silêncio esperando ser lembrado.",
+    "normal": "Retorno à essência, purificação profunda e contato com uma força anterior ao próprio desejo.",
+    "invertida": "Desconexão espiritual, vazio emocional ou sensação de estar perdido dentro de si."
+  },
+  "The Dead Constellation": {
+    "tipo": "Carta Rara",
+    "raridade": "Rara",
+    "energia": "Memória Cósmica",
+    "palavra": "Restos",
+    "frase": "Mesmo mortas, algumas estrelas continuam desenhando destinos.",
+    "normal": "O passado ainda influencia o presente. Há padrões antigos pedindo compreensão.",
+    "invertida": "Apego a histórias encerradas, repetição de ciclos ou nostalgia paralisante."
+  },
+  "The Starless Throne": {
+    "tipo": "Carta Rara",
+    "raridade": "Eclipse",
+    "energia": "Poder Oculto",
+    "palavra": "Soberania",
+    "frase": "Há reis que governam melhor no escuro.",
+    "normal": "Domínio silencioso, poder interno, estratégia e autoridade que não precisa aparecer.",
+    "invertida": "Controle excessivo, isolamento arrogante ou medo de dividir poder."
+  },
+  "The First Spark": {
+    "tipo": "Carta Rara",
+    "raridade": "Primordial",
+    "energia": "Criação Absoluta",
+    "palavra": "Gênese",
+    "frase": "Toda existência começou com uma chama que ousou romper o nada.",
+    "normal": "Início poderoso, inspiração rara, nascimento de algo importante e destino em movimento.",
+    "invertida": "Potencial desperdiçado, medo de criar ou bloqueio diante de uma grande oportunidade."
+  },
+  "The Crimson Nebula": {
+    "tipo": "Carta Rara",
+    "raridade": "Rara",
+    "energia": "Desejo",
+    "palavra": "Tentação",
+    "frase": "Nem toda beleza cósmica deseja ser tocada.",
+    "normal": "Magnetismo, paixão, desejo intenso e atração por algo transformador.",
+    "invertida": "Ilusão sedutora, obsessão, dependência ou escolha guiada apenas pelo desejo."
+  },
+  "The Forgotten Moon": {
+    "tipo": "Carta Rara",
+    "raridade": "Rara",
+    "energia": "Abandono",
+    "palavra": "Esquecimento",
+    "frase": "Aquilo que foi esquecido ainda sonha dentro da noite.",
+    "normal": "Memórias reprimidas, sentimentos ignorados e necessidade de acolher partes esquecidas de si.",
+    "invertida": "Negação emocional, fuga do passado ou medo de encarar uma ferida antiga."
+  },
+  "The Void Serpent": {
+    "tipo": "Carta Rara",
+    "raridade": "Eclipse",
+    "energia": "Transformação",
+    "palavra": "Pele",
+    "frase": "A serpente do vazio troca de pele entre uma estrela e outra.",
+    "normal": "Mudança profunda, renovação instintiva e abandono de uma versão antiga.",
+    "invertida": "Resistência à transformação, autossabotagem ou permanência em ciclos tóxicos."
+  }
+}

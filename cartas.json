@@ -1,0 +1,685 @@
+{
+  "The Wanderer": {
+    "tipo": "Arcano Maior",
+    "energia": "Início",
+    "palavra": "Travessia",
+    "frase": "Todo caminho começa quando alguém encara o vazio.",
+    "normal": "Um novo ciclo se abre. É hora de arriscar, explorar e confiar no desconhecido.",
+    "invertida": "Medo de começar, impulsividade ou recusa em aceitar uma nova fase."
+  },
+  "Sirius": {
+    "tipo": "Arcano Maior",
+    "energia": "Direção",
+    "palavra": "Clareza",
+    "frase": "A estrela mais brilhante guia até os passos perdidos.",
+    "normal": "Clareza mental, orientação e decisões importantes favorecidas.",
+    "invertida": "Confusão, orgulho ou dificuldade em ouvir conselhos."
+  },
+  "Vega": {
+    "tipo": "Arcano Maior",
+    "energia": "Ascensão",
+    "palavra": "Transcendência",
+    "frase": "Quem olha alto demais pode descobrir asas.",
+    "normal": "Crescimento espiritual, amadurecimento e expansão da consciência.",
+    "invertida": "Apego ao passado, medo de evoluir ou fuga da própria grandeza."
+  },
+  "Antares": {
+    "tipo": "Arcano Maior",
+    "energia": "Conflito",
+    "palavra": "Guerra",
+    "frase": "Toda estrela vermelha carrega uma batalha em seu núcleo.",
+    "normal": "Conflitos necessários, força interior e transformação através da tensão.",
+    "invertida": "Raiva reprimida, impulsividade destrutiva ou brigas desnecessárias."
+  },
+  "The Hollow Sun": {
+    "tipo": "Arcano Maior",
+    "energia": "Ego",
+    "palavra": "Imagem",
+    "frase": "Nem todo brilho vem de uma alma acesa.",
+    "normal": "Reconhecimento, autoconfiança e necessidade de ocupar seu espaço.",
+    "invertida": "Vaidade, falsa segurança ou busca excessiva por aprovação."
+  },
+  "The Black Moon": {
+    "tipo": "Arcano Maior",
+    "energia": "Mistério",
+    "palavra": "Oculto",
+    "frase": "A lua negra revela o que a luz não suportaria mostrar.",
+    "normal": "Intuição profunda, segredos revelados e contato com o inconsciente.",
+    "invertida": "Autoengano, ilusão, medo das próprias sombras ou confusão emocional."
+  },
+  "Orion": {
+    "tipo": "Arcano Maior",
+    "energia": "Propósito",
+    "palavra": "Caçada",
+    "frase": "O caçador celeste mira aquilo que sua alma reconhece.",
+    "normal": "Foco, disciplina e avanço em direção a um objetivo importante.",
+    "invertida": "Dispersão, obsessão por metas erradas ou perda de direção."
+  },
+  "The Veil": {
+    "tipo": "Arcano Maior",
+    "energia": "Ilusão",
+    "palavra": "Névoa",
+    "frase": "Entre você e a verdade existe apenas um véu tremendo ao vento.",
+    "normal": "Algo ainda não está claro. Observe melhor antes de agir.",
+    "invertida": "Revelação, queda de ilusões ou descoberta de uma verdade escondida."
+  },
+  "Polaris": {
+    "tipo": "Arcano Maior",
+    "energia": "Estabilidade",
+    "palavra": "Norte",
+    "frase": "Mesmo no caos, há uma estrela que não se move.",
+    "normal": "Segurança, estabilidade, fidelidade aos próprios valores e orientação firme.",
+    "invertida": "Desorientação, instabilidade ou dependência excessiva de certezas externas."
+  },
+  "The Devourer": {
+    "tipo": "Arcano Maior",
+    "energia": "Destruição",
+    "palavra": "Fome",
+    "frase": "O vazio devora primeiro aquilo que já estava morto.",
+    "normal": "Fim necessário, corte profundo e libertação de padrões antigos.",
+    "invertida": "Autossabotagem, apego ao sofrimento ou destruição sem propósito."
+  },
+  "Eclipse": {
+    "tipo": "Arcano Maior",
+    "energia": "Mudança",
+    "palavra": "Virada",
+    "frase": "Quando a luz desaparece, o destino troca de máscara.",
+    "normal": "Mudança súbita, transição marcante e encerramento de uma fase.",
+    "invertida": "Resistência à mudança, medo do novo ou tentativa de controlar o inevitável."
+  },
+  "The Astral Queen": {
+    "tipo": "Arcano Maior",
+    "energia": "Intuição",
+    "palavra": "Soberania",
+    "frase": "Ela governa os reinos que só os sonhos conseguem alcançar.",
+    "normal": "Sensibilidade, sabedoria emocional, magnetismo e poder intuitivo.",
+    "invertida": "Manipulação emocional, insegurança ou desconexão da própria intuição."
+  },
+  "The Nameless Star": {
+    "tipo": "Arcano Maior",
+    "energia": "Identidade",
+    "palavra": "Essência",
+    "frase": "Nem toda estrela precisa de nome para existir.",
+    "normal": "Busca por identidade, autenticidade e reconexão com quem você realmente é.",
+    "invertida": "Crise de identidade, comparação excessiva ou tentativa de agradar todos."
+  },
+  "Supernova": {
+    "tipo": "Arcano Maior",
+    "energia": "Renascimento",
+    "palavra": "Explosão",
+    "frase": "Algumas vidas só começam depois de uma explosão.",
+    "normal": "Renovação intensa, libertação e nascimento de uma nova versão de si.",
+    "invertida": "Colapso emocional, excesso de intensidade ou medo de recomeçar."
+  },
+  "The Silent Orbit": {
+    "tipo": "Arcano Maior",
+    "energia": "Isolamento",
+    "palavra": "Silêncio",
+    "frase": "Há órbitas que só fazem sentido longe de todos.",
+    "normal": "Recolhimento necessário, reflexão, solitude e maturação interior.",
+    "invertida": "Solidão dolorosa, afastamento excessivo ou dificuldade de pedir ajuda."
+  },
+  "Abyssus": {
+    "tipo": "Arcano Maior",
+    "energia": "Obsessão",
+    "palavra": "Abismo",
+    "frase": "O abismo não chama; ele espera que você responda.",
+    "normal": "Desejos intensos, tentações, vínculos profundos e forças inconscientes em ação.",
+    "invertida": "Dependência, compulsão, prisão emocional ou perda de controle."
+  },
+  "The Cosmic Eye": {
+    "tipo": "Arcano Maior",
+    "energia": "Verdade",
+    "palavra": "Revelação",
+    "frase": "Nada se esconde do olho que nasceu antes da luz.",
+    "normal": "Verdade revelada, lucidez, percepção aguçada e clareza sobre uma situação.",
+    "invertida": "Negação, cegueira voluntária ou recusa em enxergar os fatos."
+  },
+  "Celestia": {
+    "tipo": "Arcano Maior",
+    "energia": "Esperança",
+    "palavra": "Cura",
+    "frase": "Mesmo no vazio, uma estrela insiste em nascer.",
+    "normal": "Esperança, cura emocional, inspiração e proteção espiritual.",
+    "invertida": "Desânimo, perda de fé ou dificuldade em acreditar no próprio caminho."
+  },
+  "The Void King": {
+    "tipo": "Arcano Maior",
+    "energia": "Domínio",
+    "palavra": "Controle",
+    "frase": "Reina melhor quem aprendeu a governar o próprio caos.",
+    "normal": "Autoridade, autocontrole, liderança e domínio sobre situações difíceis.",
+    "invertida": "Rigidez, autoritarismo, frieza ou tentativa excessiva de controlar tudo."
+  },
+  "The Falling Comet": {
+    "tipo": "Arcano Maior",
+    "energia": "Caos",
+    "palavra": "Impacto",
+    "frase": "O cometa cai para lembrar que nada permanece intocado.",
+    "normal": "Evento inesperado, ruptura, movimento rápido e mudança inevitável.",
+    "invertida": "Instabilidade, impulsividade ou consequências de escolhas precipitadas."
+  },
+  "Nova Lux": {
+    "tipo": "Arcano Maior",
+    "energia": "Iluminação",
+    "palavra": "Despertar",
+    "frase": "A nova luz nasce onde a antiga certeza morreu.",
+    "normal": "Despertar espiritual, entendimento profundo e nova consciência sobre a vida.",
+    "invertida": "Confusão espiritual, falsa iluminação ou dificuldade em integrar aprendizados."
+  },
+  "Astra Eternum": {
+    "tipo": "Arcano Maior",
+    "energia": "Conclusão",
+    "palavra": "Totalidade",
+    "frase": "No fim da jornada, o viajante descobre que também era céu.",
+    "normal": "Conclusão de ciclo, realização, integração e sensação de missão cumprida.",
+    "invertida": "Ciclo incompleto, pendências, medo de finalizar ou dificuldade em seguir adiante."
+  },
+  "Ace of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Criação",
+    "palavra": "Ignição",
+    "frase": "Toda estrela nasce de uma primeira chama.",
+    "normal": "Novo impulso, energia criativa, coragem e começo promissor.",
+    "invertida": "Falta de motivação, energia dispersa ou medo de iniciar."
+  },
+  "Two of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Escolha",
+    "palavra": "Visão",
+    "frase": "Dois sóis iluminam dois caminhos, mas apenas um aquece sua alma.",
+    "normal": "Planejamento, decisão estratégica e visão de futuro.",
+    "invertida": "Indecisão, arrogância ou dificuldade em escolher uma direção."
+  },
+  "Three of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Expansão",
+    "palavra": "Horizonte",
+    "frase": "O brilho cresce quando encontra espaço para se espalhar.",
+    "normal": "Crescimento, progresso, reconhecimento inicial e novas oportunidades.",
+    "invertida": "Atrasos, expectativas frustradas ou falta de visão ampla."
+  },
+  "Four of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Celebração",
+    "palavra": "Aliança",
+    "frase": "Há fogos que só acendem quando almas se reúnem.",
+    "normal": "Conquista, estabilidade, celebração e fortalecimento de laços.",
+    "invertida": "Instabilidade, comemoração vazia ou dificuldade em se sentir pertencente."
+  },
+  "Five of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Disputa",
+    "palavra": "Atrito",
+    "frase": "Muitos brilhos juntos também podem incendiar o céu.",
+    "normal": "Competição, conflitos de ego e necessidade de afirmação.",
+    "invertida": "Fuga do confronto, ressentimento ou desgaste por disputas inúteis."
+  },
+  "Six of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Vitória",
+    "palavra": "Reconhecimento",
+    "frase": "A estrela vitoriosa não precisa gritar para ser vista.",
+    "normal": "Sucesso, validação, avanço público e recompensa pelo esforço.",
+    "invertida": "Vaidade, necessidade excessiva de aplauso ou medo de aparecer."
+  },
+  "Seven of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Defesa",
+    "palavra": "Resistência",
+    "frase": "Quem guarda sua chama precisa suportar o vento.",
+    "normal": "Coragem para defender posição, limites e convicções.",
+    "invertida": "Cansaço, defensividade excessiva ou sensação de estar sempre sob ataque."
+  },
+  "Eight of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Velocidade",
+    "palavra": "Movimento",
+    "frase": "Quando o céu se abre, a luz atravessa tudo.",
+    "normal": "Aceleração, mensagens, avanço rápido e acontecimentos em movimento.",
+    "invertida": "Pressa, ansiedade, atrasos ou comunicação confusa."
+  },
+  "Nine of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Persistência",
+    "palavra": "Fôlego",
+    "frase": "A última chama costuma ser a que salva a noite.",
+    "normal": "Resiliência, força final e proteção daquilo que foi construído.",
+    "invertida": "Exaustão, paranoia, orgulho ferido ou insistência desgastante."
+  },
+  "Ten of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Peso",
+    "palavra": "Sobrecarga",
+    "frase": "Carregar muitos sóis também pode queimar as mãos.",
+    "normal": "Responsabilidades, excesso de tarefas e necessidade de reorganizar prioridades.",
+    "invertida": "Colapso, esgotamento ou recusa em dividir responsabilidades."
+  },
+  "Page of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Descoberta",
+    "palavra": "Faísca",
+    "frase": "O aprendiz do fogo ainda não teme a própria luz.",
+    "normal": "Entusiasmo, curiosidade, inspiração e vontade de experimentar.",
+    "invertida": "Imaturidade, impulsividade ou promessa sem ação."
+  },
+  "Knight of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Impulso",
+    "palavra": "Avanço",
+    "frase": "Ele cavalga como se o céu inteiro estivesse em chamas.",
+    "normal": "Ação intensa, coragem, paixão e movimento ousado.",
+    "invertida": "Impaciência, imprudência ou atitudes guiadas apenas pelo ego."
+  },
+  "Queen of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Magnetismo",
+    "palavra": "Presença",
+    "frase": "Sua luz não pede espaço; ela cria o próprio céu.",
+    "normal": "Carisma, confiança, criatividade e poder pessoal.",
+    "invertida": "Insegurança, orgulho ferido ou necessidade de controlar a atenção."
+  },
+  "King of Suns": {
+    "tipo": "Arcano Menor",
+    "naipe": "Suns",
+    "energia": "Liderança",
+    "palavra": "Domínio",
+    "frase": "O rei solar governa primeiro a si mesmo.",
+    "normal": "Autoridade, visão, liderança madura e capacidade de realização.",
+    "invertida": "Autoritarismo, vaidade, rigidez ou uso egoísta do poder."
+  },
+
+  "Ace of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Emoção",
+    "palavra": "Nascente",
+    "frase": "Toda maré começa em uma gota invisível.",
+    "normal": "Novo afeto, abertura emocional, intuição e sensibilidade renovada.",
+    "invertida": "Bloqueio emocional, medo de sentir ou afeto reprimido."
+  },
+  "Two of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "União",
+    "palavra": "Encontro",
+    "frase": "Duas luas se reconhecem antes mesmo de se tocarem.",
+    "normal": "Conexão, parceria, reciprocidade e vínculo afetivo importante.",
+    "invertida": "Desalinhamento, carência, dependência ou vínculo desequilibrado."
+  },
+  "Three of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Comunhão",
+    "palavra": "Celebração",
+    "frase": "A alma também precisa de constelações amigas.",
+    "normal": "Amizades, celebração, apoio emocional e alegria compartilhada.",
+    "invertida": "Excesso, fofocas, isolamento social ou vínculos superficiais."
+  },
+  "Four of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Apatia",
+    "palavra": "Desinteresse",
+    "frase": "Às vezes a lua cheia parece vazia para quem fechou os olhos.",
+    "normal": "Tédio emocional, introspecção e necessidade de reavaliar desejos.",
+    "invertida": "Reabertura emocional, nova chance ou saída de um estado de estagnação."
+  },
+  "Five of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Perda",
+    "palavra": "Lamento",
+    "frase": "Nem toda maré que recua abandona a costa para sempre.",
+    "normal": "Tristeza, decepção, luto simbólico e foco no que foi perdido.",
+    "invertida": "Aceitação, cura gradual e percepção do que ainda permanece."
+  },
+  "Six of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Memória",
+    "palavra": "Nostalgia",
+    "frase": "Algumas luas antigas ainda iluminam o presente.",
+    "normal": "Memórias, infância, reencontros e ternura ligada ao passado.",
+    "invertida": "Apego ao passado, idealização ou dificuldade em amadurecer."
+  },
+  "Seven of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Fantasia",
+    "palavra": "Miragem",
+    "frase": "Nem todo reflexo lunar pertence ao céu.",
+    "normal": "Sonhos, possibilidades, imaginação e escolhas emocionais complexas.",
+    "invertida": "Ilusão, confusão, fuga da realidade ou excesso de fantasia."
+  },
+  "Eight of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Partida",
+    "palavra": "Renúncia",
+    "frase": "A lua minguante ensina a ir embora.",
+    "normal": "Abandono de algo que perdeu sentido e busca por profundidade.",
+    "invertida": "Medo de partir, apego emocional ou retorno a padrões antigos."
+  },
+  "Nine of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Desejo",
+    "palavra": "Satisfação",
+    "frase": "A alma sorri quando uma maré antiga finalmente chega.",
+    "normal": "Realização emocional, prazer, gratidão e desejo atendido.",
+    "invertida": "Insatisfação, prazer vazio ou busca excessiva por validação emocional."
+  },
+  "Ten of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Plenitude",
+    "palavra": "Lar",
+    "frase": "O verdadeiro lar é onde a alma pode descansar sem máscara.",
+    "normal": "Harmonia afetiva, família, pertencimento e felicidade compartilhada.",
+    "invertida": "Desarmonia familiar, idealização de felicidade ou vínculos frágeis."
+  },
+  "Page of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Sensibilidade",
+    "palavra": "Mensagem",
+    "frase": "O jovem lunar escuta sentimentos antes de ouvir palavras.",
+    "normal": "Mensagem afetiva, criatividade, intuição jovem e abertura do coração.",
+    "invertida": "Imaturidade emocional, fantasia excessiva ou medo de se expressar."
+  },
+  "Knight of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Romance",
+    "palavra": "Busca",
+    "frase": "Ele cavalga seguindo uma canção que só o coração entende.",
+    "normal": "Convite, romantismo, idealismo e movimento guiado pelo sentimento.",
+    "invertida": "Sedução vazia, instabilidade emocional ou promessas pouco realistas."
+  },
+  "Queen of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Profundidade",
+    "palavra": "Intuição",
+    "frase": "Ela conhece as marés que ninguém ousa nomear.",
+    "normal": "Empatia, cuidado, sabedoria emocional e forte percepção intuitiva.",
+    "invertida": "Emoções confusas, absorção da dor alheia ou manipulação afetiva."
+  },
+  "King of Moons": {
+    "tipo": "Arcano Menor",
+    "naipe": "Moons",
+    "energia": "Maturidade",
+    "palavra": "Equilíbrio",
+    "frase": "O rei lunar sente tudo, mas não se afoga em nada.",
+    "normal": "Controle emocional, compaixão madura e sabedoria afetiva.",
+    "invertida": "Frieza, repressão emocional ou instabilidade escondida sob controle."
+  },
+
+  "Ace of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Ideia",
+    "palavra": "Corte",
+    "frase": "Um cometa atravessa o céu como um pensamento impossível de ignorar.",
+    "normal": "Clareza mental, nova ideia, decisão e verdade surgindo.",
+    "invertida": "Confusão, pensamento impulsivo ou dificuldade de comunicar uma verdade."
+  },
+  "Two of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Impasse",
+    "palavra": "Bloqueio",
+    "frase": "Dois cometas parados no céu anunciam uma escolha adiada.",
+    "normal": "Dúvida, decisão difícil e necessidade de analisar com frieza.",
+    "invertida": "Evitação, negação ou escolha feita tarde demais."
+  },
+  "Three of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Dor",
+    "palavra": "Ruptura",
+    "frase": "Algumas verdades cortam como fragmentos de estrelas partidas.",
+    "normal": "Mágoa, separação, verdade dolorosa e ferida emocional.",
+    "invertida": "Cura, perdão gradual ou dificuldade em soltar uma dor antiga."
+  },
+  "Four of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Pausa",
+    "palavra": "Repouso",
+    "frase": "Até o cometa precisa desaparecer antes de voltar ao céu.",
+    "normal": "Descanso mental, pausa estratégica e recuperação.",
+    "invertida": "Esgotamento, inquietação ou recusa em parar."
+  },
+  "Five of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Conflito",
+    "palavra": "Derrota",
+    "frase": "Vencer no vazio ainda pode significar ficar sozinho.",
+    "normal": "Discussões, tensão, disputa mental e vitória com custo alto.",
+    "invertida": "Reconciliação possível, abandono de conflitos ou ressentimento persistente."
+  },
+  "Six of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Travessia",
+    "palavra": "Distância",
+    "frase": "O cometa parte levando consigo o peso da última colisão.",
+    "normal": "Transição, afastamento necessário e busca por águas mais calmas.",
+    "invertida": "Dificuldade em seguir, resistência à mudança ou retorno ao conflito."
+  },
+  "Seven of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Estratégia",
+    "palavra": "Furtividade",
+    "frase": "Nem todo movimento no céu deseja ser visto.",
+    "normal": "Estratégia, discrição, inteligência e ação cuidadosa.",
+    "invertida": "Engano, fuga de responsabilidade ou verdade vindo à tona."
+  },
+  "Eight of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Prisão",
+    "palavra": "Limitação",
+    "frase": "Às vezes a mente cria grades onde havia apenas órbitas.",
+    "normal": "Bloqueio mental, medo, sensação de aprisionamento e autolimitação.",
+    "invertida": "Libertação, mudança de perspectiva e recuperação de autonomia."
+  },
+  "Nine of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Ansiedade",
+    "palavra": "Insônia",
+    "frase": "Há noites em que os pensamentos caem como meteoros.",
+    "normal": "Preocupações, culpa, ansiedade e excesso de pensamentos.",
+    "invertida": "Alívio gradual, pedido de ajuda ou saída de um ciclo mental pesado."
+  },
+  "Ten of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Fim",
+    "palavra": "Colapso",
+    "frase": "Depois da queda final, até o céu fica em silêncio.",
+    "normal": "Encerramento doloroso, limite atingido e fim inevitável de um ciclo.",
+    "invertida": "Recuperação, sobrevivência e começo após uma fase difícil."
+  },
+  "Page of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Observação",
+    "palavra": "Vigilância",
+    "frase": "O jovem cometa aprende observando o rastro dos antigos.",
+    "normal": "Curiosidade mental, estudo, comunicação e atenção aos detalhes.",
+    "invertida": "Fofoca, ansiedade, imaturidade na fala ou excesso de desconfiança."
+  },
+  "Knight of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Ataque",
+    "palavra": "Velocidade",
+    "frase": "Ele chega antes que o próprio pensamento termine.",
+    "normal": "Ação rápida, coragem intelectual, decisão e confronto direto.",
+    "invertida": "Agressividade, imprudência verbal ou pressa que causa danos."
+  },
+  "Queen of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Lucidez",
+    "palavra": "Discernimento",
+    "frase": "Ela corta ilusões sem levantar a voz.",
+    "normal": "Inteligência, independência, verdade e comunicação precisa.",
+    "invertida": "Frieza, crítica excessiva, ressentimento ou palavras usadas como lâmina."
+  },
+  "King of Comets": {
+    "tipo": "Arcano Menor",
+    "naipe": "Comets",
+    "energia": "Razão",
+    "palavra": "Autoridade",
+    "frase": "Seu trono é feito de silêncio, cálculo e verdade.",
+    "normal": "Racionalidade, estratégia, liderança intelectual e decisões justas.",
+    "invertida": "Manipulação, dureza, arrogância intelectual ou controle pela palavra."
+  },
+
+  "Ace of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Matéria",
+    "palavra": "Semente",
+    "frase": "Toda galáxia começa como poeira reunida em segredo.",
+    "normal": "Nova oportunidade material, prosperidade inicial e potencial concreto.",
+    "invertida": "Chance perdida, instabilidade ou falta de planejamento prático."
+  },
+  "Two of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Equilíbrio",
+    "palavra": "Ritmo",
+    "frase": "A nebulosa dança sem deixar cair suas estrelas.",
+    "normal": "Equilíbrio entre demandas, adaptação e administração de prioridades.",
+    "invertida": "Desorganização, sobrecarga ou dificuldade em manter estabilidade."
+  },
+  "Three of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Construção",
+    "palavra": "Obra",
+    "frase": "Nenhum universo se ergue sozinho.",
+    "normal": "Trabalho em equipe, habilidade, construção gradual e reconhecimento técnico.",
+    "invertida": "Falta de cooperação, trabalho malfeito ou esforço sem alinhamento."
+  },
+  "Four of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Apego",
+    "palavra": "Posse",
+    "frase": "Quem segura estrelas com força demais apaga o próprio céu.",
+    "normal": "Proteção de recursos, cautela financeira e necessidade de segurança.",
+    "invertida": "Avareza, medo de perder, controle excessivo ou apego material."
+  },
+  "Five of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Escassez",
+    "palavra": "Frio",
+    "frase": "Mesmo fora da luz, ninguém atravessa o vazio sozinho.",
+    "normal": "Dificuldade material, sensação de exclusão e necessidade de apoio.",
+    "invertida": "Ajuda chegando, recuperação gradual ou saída de um período difícil."
+  },
+  "Six of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Troca",
+    "palavra": "Generosidade",
+    "frase": "A estrela que doa luz não se torna menor por iluminar.",
+    "normal": "Ajuda, generosidade, equilíbrio nas trocas e apoio material.",
+    "invertida": "Dívidas emocionais, exploração ou desequilíbrio entre dar e receber."
+  },
+  "Seven of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Paciência",
+    "palavra": "Cultivo",
+    "frase": "Nebulosas não apressam o nascimento de estrelas.",
+    "normal": "Espera produtiva, avaliação de resultados e crescimento gradual.",
+    "invertida": "Impaciência, frustração ou abandono precoce de algo promissor."
+  },
+  "Eight of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Ofício",
+    "palavra": "Dedicação",
+    "frase": "A maestria nasce da repetição silenciosa.",
+    "normal": "Estudo, trabalho, aperfeiçoamento e dedicação consistente.",
+    "invertida": "Desleixo, repetição sem alma ou falta de comprometimento."
+  },
+  "Nine of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Autonomia",
+    "palavra": "Colheita",
+    "frase": "Há beleza em possuir um céu construído pelas próprias mãos.",
+    "normal": "Independência, conforto, mérito e conquistas pessoais.",
+    "invertida": "Dependência, insegurança material ou prazer sem sustentação."
+  },
+  "Ten of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Legado",
+    "palavra": "Herança",
+    "frase": "Algumas estrelas brilham por gerações depois de morrer.",
+    "normal": "Família, patrimônio, estabilidade duradoura e construção de legado.",
+    "invertida": "Conflitos familiares, instabilidade material ou heranças mal resolvidas."
+  },
+  "Page of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Aprendizado",
+    "palavra": "Estudo",
+    "frase": "O aprendiz observa a poeira antes de moldar mundos.",
+    "normal": "Estudo, nova habilidade, oportunidade prática e começo disciplinado.",
+    "invertida": "Preguiça, distração, falta de foco ou desperdício de potencial."
+  },
+  "Knight of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Constância",
+    "palavra": "Dever",
+    "frase": "Ele avança devagar porque carrega mundos inteiros.",
+    "normal": "Responsabilidade, paciência, trabalho constante e confiabilidade.",
+    "invertida": "Estagnação, teimosia, lentidão excessiva ou rotina sem vida."
+  },
+  "Queen of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Nutrição",
+    "palavra": "Cuidado",
+    "frase": "Ela transforma poeira cósmica em abrigo.",
+    "normal": "Cuidado, prosperidade, praticidade, acolhimento e estabilidade.",
+    "invertida": "Controle, exaustão por cuidar demais ou insegurança material."
+  },
+  "King of Nebulas": {
+    "tipo": "Arcano Menor",
+    "naipe": "Nebulas",
+    "energia": "Prosperidade",
+    "palavra": "Estrutura",
+    "frase": "Seu reino é feito de tempo, paciência e matéria vencida.",
+    "normal": "Estabilidade, sucesso material, liderança prática e segurança.",
+    "invertida": "Ganância, rigidez, materialismo ou medo excessivo de perder."
+  }
+}

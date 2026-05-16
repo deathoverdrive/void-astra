@@ -1,0 +1,15 @@
+{
+  "name": "voidastrabot",
+  "version": "1.0.0",
+  "description": "Oracle Bot",
+  "license": "ISC",
+  "author": "deathoverdrive",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "discord.js": "^13.17.1"
+  }
+}

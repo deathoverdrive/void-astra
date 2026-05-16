@@ -1,0 +1,46 @@
+{
+    "1363246963222511747": {
+        "nome": "deathoverdrive",
+        "leituras": 6,
+        "cartas": {
+            "Two of Nebulas": 1,
+            "Nine of Suns": 2,
+            "Queen of Nebulas": 1,
+            "The Dead Constellation": 1,
+            "Six of Suns": 3,
+            "The Silent Orbit": 1,
+            "Seven of Suns": 1,
+            "Antares": 1,
+            "The Nameless Star": 1,
+            "Abyssus": 1,
+            "Queen of Moons": 1,
+            "The White Abyss": 1,
+            "The Forgotten Moon": 1,
+            "Eight of Nebulas": 1,
+            "Ace of Suns": 1
+        },
+        "energias": {
+            "Equilíbrio": 1,
+            "Persistência": 2,
+            "Nutrição": 1,
+            "Memória Cósmica": 1,
+            "Vitória": 3,
+            "Isolamento": 1,
+            "Defesa": 1,
+            "Conflito": 1,
+            "Identidade": 1,
+            "Obsessão": 1,
+            "Profundidade": 1,
+            "Vazio Original": 1,
+            "Abandono": 1,
+            "Ofício": 1,
+            "Criação": 1
+        },
+        "ultima_leitura": "15/05/2026 16:32",
+        "signo": "Escorpião",
+        "signo_chave": "escorpiao",
+        "signos_consultados": {
+            "Áries": 2
+        }
+    }
+}
