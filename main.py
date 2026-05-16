@@ -798,8 +798,8 @@ async def ajuda(ctx):
         "`!amor` — leitura diária sobre amor.\n"
         "`!carreira` — leitura diária profissional.\n"
         "`!espiritual` — leitura diária espiritual.\n"
-        "`!cooldowns` — mostra quais leituras ainda estão disponíveis.\n\n"
-        "`!evento` — mostra o evento cósmico ativo do dia.\n"
+        "`!cooldowns` — mostra quais leituras ainda estão disponíveis.\n"
+        "`!evento` — mostra o evento cósmico ativo do dia.\n\n"
 
         "**Comandos do viajante**\n"
         "`!perfil` — mostra seu perfil astral.\n"
