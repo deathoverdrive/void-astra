@@ -434,7 +434,7 @@ def criar_embed_leitura(titulo, descricao, cartas_sorteadas, posicoes, tipo_leit
 )
 
     if combinacoes:
-        texto_combinacoes = ""
+    texto_combinacoes = ""
 
     for combinacao in combinacoes:
         texto_combinacoes += (
