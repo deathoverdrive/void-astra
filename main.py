@@ -224,9 +224,13 @@ def registrar_leitura(usuario, cartas_sorteadas, signo=None):
     perfil = obter_perfil(usuario)
     perfil["leituras"] += 1
     perfil["ultima_leitura"] = datetime.now().strftime("%d/%m/%Y %H:%M")
-
+    
     if signo:
         perfil["signos_consultados"][signo] = perfil["signos_consultados"].get(signo, 0) + 1
+        perfil["ultima_leitura_signo"] = {
+        "data": datetime.now().strftime("%d/%m/%Y %H:%M"),
+        "signo": signo,
+        "cartas": cartas_sorteadas
 
     for carta in cartas_sorteadas:
         perfil["cartas"][carta["nome"]] = perfil["cartas"].get(carta["nome"], 0) + 1
@@ -454,6 +458,40 @@ def resposta_simples(titulo, texto):
 async def on_ready():
     print(f"🌌 {bot.user} despertou no vazio.")
 
+@bot.command()
+async def reversigno(ctx):
+    perfil = obter_perfil(ctx.author)
+
+    ultima = perfil.get("ultima_leitura_signo")
+
+    if not ultima:
+        await ctx.send("Você ainda não possui uma leitura de signo registrada hoje.")
+        return
+
+    signo_nome = ultima["signo"]
+    cartas_salvas = ultima["cartas"]
+
+    signo_info = None
+
+    for dados in SIGNOS.values():
+        if dados["nome"] == signo_nome:
+            signo_info = dados
+            break
+
+    if signo_info is None:
+        await ctx.send("Não consegui recuperar os dados do signo dessa leitura.")
+        return
+
+    embed = criar_embed_leitura(
+        f"{signo_info['simbolo']} Void Astra — Revisão de {signo_info['nome']}",
+        f"Esta é sua última leitura astral registrada em **{ultima['data']}**.",
+        cartas_salvas,
+        ["Energia do Dia", "Desafio Astral", "Conselho Estelar"],
+        "signo",
+        signo_info
+    )
+
+    await ctx.send(embed=embed)
 
 @bot.command()
 async def leitura(ctx):
@@ -792,6 +830,7 @@ async def ajuda(ctx):
         "`!leitura` — leitura geral diária.\n"
         "`!semanal` — leitura semanal.\n"
         "`!signo` — leitura diária do seu signo definido.\n"
+        "`!reversigno` — mostra novamente sua última leitura de signo.\n"
         "`!meusigno` — define seu signo pessoal.\n"
         "`!amor` — leitura diária sobre amor.\n"
         "`!carreira` — leitura diária profissional.\n"
