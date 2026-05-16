@@ -519,63 +519,6 @@ async def leitura(ctx):
 
     await ctx.send(embed=embed)
 
-
-@bot.command()
-async def semanal(ctx):
-    if not pode_fazer_leitura(ctx.author, "semanal", "semanal"):
-        await ctx.send("🌌 Você já recebeu sua leitura semanal. O Void Astra abrirá uma nova leitura na próxima semana.")
-        return
-
-    cartas_sorteadas = sortear_cartas(3)
-    registrar_leitura(ctx.author, cartas_sorteadas)
-
-    embed = criar_embed_leitura(
-        "🌌 Void Astra — Leitura Semanal",
-        "O vazio abre os sinais para os próximos dias.",
-        cartas_sorteadas,
-        ["Energia da Semana", "Desafio", "Conselho"],
-        "semanal"
-    )
-
-    await ctx.send(embed=embed)
-
-
-@bot.command()
-async def signo(ctx, *, signo_nome=None):
-    if not pode_fazer_leitura(ctx.author, "signo", "diario"):
-        await ctx.send("🌙 Você já recebeu sua leitura de signo hoje. O Void Astra abrirá esse caminho novamente amanhã.")
-        return
-
-    perfil = obter_perfil(ctx.author)
-
-    if signo_nome is None:
-        if perfil.get("signo_chave"):
-            chave = perfil["signo_chave"]
-        else:
-            await ctx.send("Você ainda não definiu seu signo. Use `!meusigno <signo>`")
-            return
-    else:
-        chave = normalizar_texto(signo_nome)
-
-    if chave not in SIGNOS:
-        await ctx.send("Signo não encontrado. Use `!signos` para ver a lista.")
-        return
-
-    signo_info = SIGNOS[chave]
-    cartas_sorteadas = sortear_cartas(3)
-    registrar_leitura(ctx.author, cartas_sorteadas, signo_info["nome"])
-
-    embed = criar_embed_leitura(
-        f"{signo_info['simbolo']} Void Astra — {signo_info['nome']}",
-        f"O oráculo abriu uma leitura astral para **{signo_info['nome']}**.",
-        cartas_sorteadas,
-        ["Energia do Dia", "Desafio Astral", "Conselho Estelar"],
-        "signo",
-        signo_info
-    )
-
-    await ctx.send(embed=embed)
-
 @bot.command()
 async def evento(ctx):
     await ctx.send(embed=resposta_simples("🌌 Evento Cósmico do Dia", texto_evento_cosmico()))
@@ -620,15 +563,87 @@ async def signos(ctx):
 
     await ctx.send(embed=resposta_simples("♈ Signos do Void Astra", texto))
 
-
 @bot.command()
-async def amor(ctx):
-    if not pode_fazer_leitura(ctx.author, "amor", "diario"):
-        await ctx.send("🖤 Você já fez sua leitura do amor hoje. O Void Astra abrirá esse caminho novamente amanhã.")
+async def semanal(ctx):
+    if not pode_fazer_leitura(ctx.author, "semanal", "semanal"):
+        await ctx.send(
+            "🌌 Você já recebeu sua leitura semanal. "
+            "O Void Astra abrirá uma nova leitura na próxima semana."
+        )
         return
 
     cartas_sorteadas = sortear_cartas(3)
     registrar_leitura(ctx.author, cartas_sorteadas)
+    registrar_cooldown(ctx.author, "semanal", "semanal")
+
+    embed = criar_embed_leitura(
+        "🌌 Void Astra — Leitura Semanal",
+        "O vazio abre os sinais para os próximos dias.",
+        cartas_sorteadas,
+        ["Energia da Semana", "Desafio", "Conselho"],
+        "semanal"
+    )
+
+    await ctx.send(embed=embed)
+
+
+@bot.command()
+async def signo(ctx, *, signo_nome=None):
+    if not pode_fazer_leitura(ctx.author, "signo", "diario"):
+        await ctx.send(
+            "🌙 Você já recebeu sua leitura de signo hoje. "
+            "O Void Astra abrirá esse caminho novamente amanhã."
+        )
+        return
+
+    perfil = obter_perfil(ctx.author)
+
+    if signo_nome is None:
+        if perfil.get("signo_chave"):
+            chave = perfil["signo_chave"]
+        else:
+            await ctx.send(
+                "Você ainda não definiu seu signo.\n"
+                "Use `!meusigno aries` ou consulte com `!signo aries`."
+            )
+            return
+    else:
+        chave = normalizar_texto(signo_nome)
+
+    if chave not in SIGNOS:
+        await ctx.send("Signo não encontrado. Use `!signos`.")
+        return
+
+    signo_info = SIGNOS[chave]
+    cartas_sorteadas = sortear_cartas(3)
+
+    registrar_leitura(ctx.author, cartas_sorteadas, signo_info["nome"])
+    registrar_cooldown(ctx.author, "signo", "diario")
+
+    embed = criar_embed_leitura(
+        f"{signo_info['simbolo']} Void Astra — {signo_info['nome']}",
+        f"O oráculo abriu uma leitura astral para **{signo_info['nome']}**.",
+        cartas_sorteadas,
+        ["Energia do Dia", "Desafio Astral", "Conselho Estelar"],
+        "signo",
+        signo_info
+    )
+
+    await ctx.send(embed=embed)
+
+
+@bot.command()
+async def amor(ctx):
+    if not pode_fazer_leitura(ctx.author, "amor", "diario"):
+        await ctx.send(
+            "🖤 Você já fez sua leitura do amor hoje. "
+            "O Void Astra abrirá esse caminho novamente amanhã."
+        )
+        return
+
+    cartas_sorteadas = sortear_cartas(3)
+    registrar_leitura(ctx.author, cartas_sorteadas)
+    registrar_cooldown(ctx.author, "amor", "diario")
 
     embed = criar_embed_leitura(
         "🖤 Void Astra — Leitura do Amor",
@@ -644,11 +659,15 @@ async def amor(ctx):
 @bot.command()
 async def carreira(ctx):
     if not pode_fazer_leitura(ctx.author, "carreira", "diario"):
-        await ctx.send("☄️ Você já fez sua leitura de carreira hoje. O Void Astra abrirá esse caminho novamente amanhã.")
+        await ctx.send(
+            "☄️ Você já fez sua leitura de carreira hoje. "
+            "O Void Astra abrirá esse caminho novamente amanhã."
+        )
         return
 
     cartas_sorteadas = sortear_cartas(3)
     registrar_leitura(ctx.author, cartas_sorteadas)
+    registrar_cooldown(ctx.author, "carreira", "diario")
 
     embed = criar_embed_leitura(
         "☄️ Void Astra — Leitura de Carreira",
@@ -664,11 +683,15 @@ async def carreira(ctx):
 @bot.command()
 async def espiritual(ctx):
     if not pode_fazer_leitura(ctx.author, "espiritual", "diario"):
-        await ctx.send("🌙 Você já fez sua leitura espiritual hoje. O Void Astra abrirá esse caminho novamente amanhã.")
+        await ctx.send(
+            "🌙 Você já fez sua leitura espiritual hoje. "
+            "O Void Astra abrirá esse caminho novamente amanhã."
+        )
         return
 
     cartas_sorteadas = sortear_cartas(3)
     registrar_leitura(ctx.author, cartas_sorteadas)
+    registrar_cooldown(ctx.author, "espiritual", "diario")
 
     embed = criar_embed_leitura(
         "🌙 Void Astra — Leitura Espiritual",
@@ -679,7 +702,6 @@ async def espiritual(ctx):
     )
 
     await ctx.send(embed=embed)
-
 
 @bot.command()
 async def perfil(ctx):
