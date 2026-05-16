@@ -448,8 +448,7 @@ if combinacoes:
         )
 
 embed.set_footer(text="Void Astra • O vazio nunca permanece em silêncio.")
-
-    return embed
+return embed
 
 
 def resposta_simples(titulo, texto):
