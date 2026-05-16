@@ -409,6 +409,7 @@ def criar_embed_leitura(titulo, descricao, cartas_sorteadas, posicoes, tipo_leit
     energia_dominante = max(set(energias), key=energias.count)
 
     combinacoes = detectar_combinacoes(cartas_sorteadas)
+    texto_combinacoes = ""
 
     if signo_info:
          sintese = (
@@ -433,21 +434,18 @@ def criar_embed_leitura(titulo, descricao, cartas_sorteadas, posicoes, tipo_leit
     inline=False
 )
 
-   combinacoes = detectar_combinacoes(cartas_sorteadas)
-   texto_combinacoes = ""
-
 if combinacoes:
-    for combinacao in combinacoes:
-        texto_combinacoes += (
-            f"**{combinacao['nome']}**\n"
-            f"{combinacao['mensagem']}\n\n"
-        )
+        for combinacao in combinacoes:
+            texto_combinacoes += (
+                f"**{combinacao['nome']}**\n"
+                f"{combinacao['mensagem']}\n\n"
+            )
 
-    embed.add_field(
-        name="🔗 Combinação Cósmica Revelada",
-        value=texto_combinacoes,
-        inline=False
-    )
+        embed.add_field(
+            name="🔗 Combinação Cósmica Revelada",
+            value=texto_combinacoes,
+            inline=False
+        )
 
     embed.set_footer(text="Void Astra • O vazio nunca permanece em silêncio.")
 
