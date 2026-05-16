@@ -711,8 +711,7 @@ async def cooldowns(ctx):
 @bot.command()
 async def lore(ctx):
     texto = (
-        "O **Void Astra** é um oráculo nascido entre estrelas mortas, ecos do vazio e constelações esquecidas.\n\n"
-        "Ele não revela um destino fixo. Ele mostra forças, sombras, ciclos, tensões e possibilidades ocultas."
+        "Em construção..."
     )
 
     await ctx.send(embed=resposta_simples("🌌 Lore do Void Astra", texto))
@@ -794,7 +793,6 @@ async def ajuda(ctx):
         "`!semanal` — leitura semanal.\n"
         "`!signo` — leitura diária do seu signo definido.\n"
         "`!meusigno` — define seu signo pessoal.\n"
-        "`!signos` — lista os signos disponíveis.\n"
         "`!amor` — leitura diária sobre amor.\n"
         "`!carreira` — leitura diária profissional.\n"
         "`!espiritual` — leitura diária espiritual.\n"
@@ -808,7 +806,6 @@ async def ajuda(ctx):
 
         "**Comandos do universo**\n"
         "`!lore` — mostra a história do Void Astra.\n"
-        "`!carta Sirius` — mostra uma carta específica.\n"
         "`!arcano` — sorteia um Arcano Maior.\n"
         "`!constelacao` — revela uma constelação simbólica."
     )
