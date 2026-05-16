@@ -1,9 +1,13 @@
+from dotenv import load_dotenv
+import os
 import discord
 from discord.ext import commands
 import json
 import random
 import unicodedata
 from datetime import datetime
+
+load_dotenv()
 
 PREFIXO = "!"
 
@@ -820,4 +824,4 @@ async def on_command_error(ctx, error):
         await ctx.send("Ocorreu um erro ao executar o comando.")
         print(error)
 
-bot.run("MTUwNDg4Nzc4MzIxMzM2NzU5OQ.G647Ye.3iw2MFCf8Kwyqau1D69lz64DmyjZGV2Rp01BXw")
+bot.run(os.getenv("MTUwNDg4Nzc4MzIxMzM2NzU5OQ.GgGuzA.CIKmyIvpIAtP48GQ7KjJJ9IdH5YYNjXLfubcPg"))
