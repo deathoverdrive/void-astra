@@ -447,7 +447,7 @@ if combinacoes:
             inline=False
         )
 
-    embed.set_footer(text="Void Astra • O vazio nunca permanece em silêncio.")
+embed.set_footer(text="Void Astra • O vazio nunca permanece em silêncio.")
 
     return embed
 
