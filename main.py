@@ -207,17 +207,20 @@ def semana_atual():
 def pode_fazer_leitura(usuario, tipo, modo="diario"):
     perfil = obter_perfil(usuario)
 
-    if modo == "semanal":
-        marcador_atual = semana_atual()
-    else:
-        marcador_atual = data_hoje()
+    marcador_atual = semana_atual() if modo == "semanal" else data_hoje()
 
     if perfil["cooldowns"].get(tipo) == marcador_atual:
         return False
 
+    return True
+
+def registrar_cooldown(usuario, tipo, modo="diario"):
+    perfil = obter_perfil(usuario)
+
+    marcador_atual = semana_atual() if modo == "semanal" else data_hoje()
+
     perfil["cooldowns"][tipo] = marcador_atual
     salvar_perfis()
-    return True
 
 
 def registrar_leitura(usuario, cartas_sorteadas, signo=None):
@@ -496,11 +499,15 @@ async def reversigno(ctx):
 @bot.command()
 async def leitura(ctx):
     if not pode_fazer_leitura(ctx.author, "leitura", "diario"):
-        await ctx.send("🔮 Você já fez sua leitura geral hoje. O Void Astra abrirá esse caminho novamente amanhã.")
+        await ctx.send(
+            "🔮 Você já fez sua leitura geral hoje. "
+            "O Void Astra abrirá esse caminho novamente amanhã."
+        )
         return
 
     cartas_sorteadas = sortear_cartas(3)
     registrar_leitura(ctx.author, cartas_sorteadas)
+    registrar_cooldown(ctx.author, "leitura", "diario")
 
     embed = criar_embed_leitura(
         "🔮 Void Astra — Leitura Geral",
