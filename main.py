@@ -824,4 +824,4 @@ async def on_command_error(ctx, error):
         await ctx.send("Ocorreu um erro ao executar o comando.")
         print(error)
 
-bot.run(os.getenv("MTUwNDg4Nzc4MzIxMzM2NzU5OQ.GgGuzA.CIKmyIvpIAtP48GQ7KjJJ9IdH5YYNjXLfubcPg"))
+bot.run(os.getenv("DISCORD_TOKEN"))
